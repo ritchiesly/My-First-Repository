@@ -1,0 +1,57 @@
+---
+title: "Ritchie Ly Activity 1"
+author: "Ritchie Ly"
+date: "18/09/2019"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+# Biography
+___
+My name is Ritchie and I am a third year PhD student at McMaster from the Department of Chemistry and Chemical Biology. My research involves the field of *metabolomics*, which is the down stream study and result of genomics and proteomics. An advantage of studying metabolomics over other biological science fields is that it provides a real-time *snapshot* of the human body, which is useful for diagnostics and theraputic intervention. An example of metabolomics was pioneered by Dr. Robert Guthrie who created a large scale platform for early diagnosis of phenylketonurea or PKU in newborns. My thesis will work as an extension to apply metabolomics and uncover signatures of cystic fibrosis in newborns to better diagnose ambiguous cases and improve the current screening algorithms.
+
+# Favorites
+___
+
+## Favorite Music
+1. 7 Rings by Ariana Grande 
+2. How Do You Sleep? by Sam Smith
+3. Boyfriend by Ariana Grande and Social House
+4. Waves by Normani and 6lack
+5. House Party - Sam Hunt
+
+## Favorite Equation
+
+Albert Einstein's famous one:
+
+$$E=MC^2$$
+
+## Favorite Artists
+
+Name             |Achievements
+-----------------|-----------------
+Ariana Grande    |Music artist
+Vincent Van Gogh |A Dutch post-impressionist painter, famous for "A Starry Night"
+Leonardo da Vinci|Artist famous for the "Mona Lisa"" and "The Last Supper"
+Andy Warhol      |An Ameriacn artist, famous for being a leading figure in "Pop art"
+Pablo Picasso    |A painter of spanish descent, known for his work "Guernica"
+
+# A Chunk of Code
+___
+
+```r
+# Creating the data for the chart
+Conc <- c(65,72,38,52,41)
+AminoAcid <- c("Phe","Ala","Tyr","Leu","Gln")
+
+# Naming the file of the chart
+png(file = "amino acid concentrations in patient x.png")
+
+# Plot the bar chart 
+barplot(Conc,names.arg=AminoAcid,xlab="AminoAcid",ylab="Concentration in mM",col="red",
+        main="Amino Acid Concentrations in Patient X",border="black")
+
+# Save the file to R directory
+dev.off()
+```
